@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <title>InfoJobs</title>
+  </head>
+  <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"
+    integrity="sha512-jTgBq4+dMYh73dquskmUFEgMY5mptcbqSw2rmhOZZSJjZbD2wMt0H5nhqWtleVkyBEjmzid5nyERPSNBafG4GQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <body>
+    <header>
+      <div class="identificadorUser">
+        <img src="./icons/logo-duotone-white.svg" alt="" />
+      </div>
+      <ul class="menu">
+        <li class="menu__itens">
+          <img src="./icons/botao-home.png" alt="" />
+          <a>Minha área</a>
+        </li>
+        <li class="menu__itens">
+          <img src="./icons/mala-de-viagem.png" alt="" />
+          <a>Candidaturas</a>
+        </li>
+        <li class="menu__itens">
+          <img src="./icons/lupa.png" alt="" />
+          <a>Buscar vagas</a>
+        </li>
+        <li class="menu__itens">
+          <img src="./icons/curriculo-online.png" alt="" />
+          <a>Currículo</a>
+        </li>
+        <li class="menu__itens">
+          <img src="./icons/comente.png" alt="" />
+          <a>Mensagens</a>
+        </li>
+        <li class="menu__itens">
+          <img src="./icons/favorito.png" alt="" />
+          <a>Empresas</a>
+        </li>
+        <li class="menu__itens">
+          <img src="./icons/dinheiro.png" alt="" />
+          <a>Salários</a>
+        </li>
+      </ul>
+    </header>
+    <div class="submenu"><p>teste</p></div>
+    <section class="formulario">
+      <div class="descricao">
+        <h4>Dados Pessoais</h4>
+        <h5>Segurança e confidencialidade</h5>
+        <p>
+          Infojobs garante a segurança e a confidencialidade de todos os dados
+          pessoais introduzidos em seu cadastro.
+        </p>
+      </div>
+
+      <div class="conteudo__formulario">
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="Nome">Nome</label>
+            <input type="text" name="Nome" class="inputGrande" />
+          </div>
+          <div class="item__formulario">
+            <label for="Sobrenome">Sobrenome</label>
+            <input type="text" name="Sobrenome" class="inputGrande" />
+          </div>
+        </div>
+
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="nacionalidade">Nacionalidade</label>
+            <select class="nacionalidade" name="nacionalidade"></select>
+          </div>
+          <div class="item__formulario">
+            <label for="documento">Tipo de documento</label>
+            <select class="documento" id="tipoDocumento" name="documento">
+              <option>CPF</option>
+              <option>RG</option>
+              <option>CNH</option>
+            </select>
+          </div>
+          <div class="item__formulario">
+            <label for="numerodocumento">Número do documento</label>
+            <input
+              type="text"
+              name="numerodocumento"
+              class="numerodocumento"
+              maxlength="14"
+              id="cpf"
+            />
+          </div>
+        </div>
+
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="resumo">Resumo</label>
+            <textarea
+              name="resumo"
+              cols="100"
+              rows="3"
+              placeholder="Descreva brevemente suas habilidades, conhecimentos, interesses e pretensões de futuro"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="telefone">Telefone</label>
+            <input
+              type="text"
+              name="telefone"
+              class="inputpequeno"
+              maxlength="2"
+            />
+            <p class="hifen">-</p>
+            <input
+              type="text"
+              name="telefone"
+              class="telefone"
+              id="numeroTelefone"
+            />
+          </div>
+          <div class="item__formulario">
+            <label for="telefone">Data de nascimento</label>
+            <input
+              type="text"
+              name="nascimentoDia"
+              class="inputpequeno"
+              placeholder="dd"
+              maxlength="2"
+            />
+            <p class="hifen">-</p>
+            <input
+              type="text"
+              name="nascimentoMes"
+              class="inputpequeno mes"
+              placeholder="mm"
+              maxlength="2"
+            />
+            <p class="hifen">-</p>
+            <input
+              type="text"
+              name="nascimentoAno"
+              class="inputpequeno ano"
+              placeholder="aaaa"
+              maxlength="4"
+            />
+          </div>
+        </div>
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="telefone">Telefone Celular</label>
+            <input
+              type="text"
+              name="telefone"
+              class="inputpequeno"
+              maxlength="2"
+            />
+            <p class="hifen">-</p>
+            <input
+              type="text"
+              name="telefone"
+              class="telefone"
+              id="numeroTelefone"
+            />
+          </div>
+        </div>
+
+        <div class="linha">
+          <legend>
+            Receber mensagens por <img src="./icons/whatsapp.svg" alt="" />
+          </legend>
+          <div class="whatsapp">
+            <input type="radio" name="contato" value="sim" />
+            <label for="contato" class="whatsapp">Sim</label>
+            <input type="radio" name="contato" value="nao" />
+            <label for="contato" class="whatsapp">Não</label>
+          </div>
+        </div>
+
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="nacionalidade ">Estado Civil</label>
+            <select class="nacionalidade estadocivil" name="nacionalidade">
+              <option>Solteiro</option>
+            </select>
+          </div>
+          <div class="item__formulario">
+            <input type="radio" name="sexo" value="mulher" />
+            <label for="sexo" class="sexo">Mulher</label>
+            <input type="radio" name="sexo" value="homem" />
+            <label for="sexo" class="sexo">Homem</label>
+          </div>
+        </div>
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="Nome">CEP</label>
+            <input type="text" name="cep" class="cep" id="cep" />
+          </div>
+        </div>
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="Nome">Estado</label>
+            <input type="text" name="Nome" class="inputGrande" id="estado" />
+          </div>
+          <div class="item__formulario">
+            <label for="Sobrenome">Cidade</label>
+            <input
+              type="text"
+              name="Sobrenome"
+              class="inputGrande"
+              id="cidade"
+            />
+          </div>
+        </div>
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="Nome">Bairro</label>
+            <input type="text" name="Nome" class="inputGrande" id="bairro" />
+          </div>
+          <div class="item__formulario">
+            <label for="Sobrenome">Endereço</label>
+            <input
+              type="text"
+              name="Sobrenome"
+              class="inputGrande"
+              id="endereco"
+            />
+          </div>
+        </div>
+        <div class="linha">
+          <div class="item__formulario">
+            <label for="Nome">Numero</label>
+            <input
+              type="text"
+              name="Nome"
+              class="inputGrande inputNumeroEnd"
+              id="numeroEndereco"
+            />
+          </div>
+
+          <div class="item__formulario elevado">
+            <input
+              type="checkbox"
+              name="semNumero"
+              class="semNumero"
+              id="semNumero"
+            />
+            <p class="textoSemNumero">s/ n</p>
+          </div>
+          <div class="item__formulario">
+            <label for="Sobrenome">Complemento</label>
+            <input type="text" name="Sobrenome" class="inputGrande" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

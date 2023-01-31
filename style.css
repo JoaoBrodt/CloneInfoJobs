@@ -1,0 +1,179 @@
+:root {
+  --azul-padrao: #0d3878;
+  --cinza-claro: #f7f5f5;
+  --branco: white;
+  --cinza-borda: #dddddd;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  font-size: 12px;
+}
+body {
+  background: var(--cinza-claro);
+}
+.identificadorUser {
+  background: var(--azul-padrao);
+}
+.identificadorUser img {
+  width: 5.4%;
+  padding-left: 7.5em;
+  padding-top: 7px;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0 8em;
+  border-bottom: 1px solid lightslategray;
+  background: var(--branco);
+}
+.menu__itens {
+  justify-content: center;
+  text-align: center;
+  margin: 0.8em 0;
+}
+.menu__itens img {
+  width: 18%;
+  display: block;
+  margin-left: 40%;
+  padding-bottom: 0.2em;
+}
+.menu__itens a {
+  padding-top: 1%;
+}
+
+.submenu {
+  border-bottom: 1px solid lightslategray;
+  padding: 1em 0;
+  text-align: center;
+  background: var(--branco);
+}
+.descricao h4 {
+  text-transform: uppercase;
+  margin-bottom: 8em;
+}
+
+.formulario {
+  background: var(--branco);
+  margin: 2em 7.5em;
+  padding: 3em 3em;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: "descricao" "conteudo";
+}
+.item__formulario {
+  display: inline-block;
+  padding-right: 2em;
+}
+
+.conteudo__formulario {
+  padding-left: 5em;
+}
+.linha {
+  display: block;
+  margin-bottom: 3em;
+}
+label {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 0.5em;
+}
+.inputGrande {
+  height: 19px;
+  width: 287px;
+  border: 1px solid var(--cinza-borda);
+  padding: 10px;
+  font-size: 16px;
+}
+.inputNumeroEnd {
+  width: 200px;
+}
+.nacionalidade,
+.documento,
+.numerodocumento {
+  width: 12em;
+  height: 2.8em;
+  border: 1px solid var(--cinza-borda);
+  font-size: 16px;
+  padding-left: 1em;
+}
+textarea {
+  border: 1px solid var(--cinza-borda);
+  font-size: 16px;
+  width: 39em;
+  padding: 1em;
+}
+.inputpequeno::placeholder,
+textarea::placeholder {
+  font-style: italic;
+}
+.hifen {
+  display: inline-block;
+  padding: 0 1em;
+}
+.inputpequeno {
+  height: 19px;
+  width: 1.5em;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--cinza-borda);
+  text-align: center;
+}
+.ano {
+  width: 5em;
+  text-align: center;
+}
+.mes {
+  width: 2em;
+  text-align: center;
+}
+.telefone {
+  height: 19px;
+  padding: 10px;
+  width: 16em;
+  border: 1px solid var(--cinza-borda);
+  font-size: 16px;
+}
+.cep {
+  width: 108px;
+  height: 19px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--cinza-borda);
+}
+
+legend {
+  font-size: 16px;
+  padding-bottom: 1em;
+}
+.whatsapp,
+.sexo {
+  display: inline;
+  margin-right: 2em;
+}
+
+input[type="radio"] {
+  width: 25px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.estadocivil {
+  width: 18em;
+}
+input[type="checkbox"] {
+  width: 25px;
+  height: 30px;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+.textoSemNumero {
+  display: inline;
+  font-size: 16px;
+}
+
+.elevado {
+  padding-bottom: 5em;
+}
